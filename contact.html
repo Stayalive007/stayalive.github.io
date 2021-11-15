@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <script src="https://kit.fontawesome.com/daf9d498cc.js" crossorigin="anonymous"></script>
+    <style>
+        .about-con {
+            display: flex;
+            justify-content: space-around;
+            min-height: 40vh;
+        }
+        
+        .social-links {
+            position: relative;
+            bottom: 53px;
+        }
+        
+        @media screen and (max-width: 800px) {
+            .about-con {
+                display: grid;
+                grid-template-areas: "first" "second" "third";
+                justify-content: unset;
+            }
+            .con-h4 {
+                grid-area: first;
+            }
+            .social-links {
+                grid-area: second;
+            }
+            .sociologo2 {
+                grid-area: third;
+            }
+            .social-links {
+                position: unset;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div>
+            <img src="IMG_3067.JPG" alt="First photo" width="200px" height="200px">
+        </div>
+        <div>
+            <img src="OPQX2726.JPG" alt="Second photo" width="200px" height="200px">
+        </div>
+        <div>
+            <img src="SVIF1040.JPG" alt="Third photo" width="200px" height="200px">
+        </div>
+    </div>
+    <section class="s1">
+        <div class="main-container">
+            <h4 class="post-hd">Contact US</h4>
+            <div class="nav-wrapper">
+                <div class="dots-wrap">
+                    <div id="dot1" class="browser-dot"></div>
+                    <div id="dot2" class="browser-dot"></div>
+                    <div id="dot3" class="browser-dot"></div>
+                </div>
+                <ul id="navigation">
+                    <li>Forty-Four-Hundred</li>
+                </ul>
+            </div>
+            <div class="intro-wrapper">
+                <div class="left-column">
+
+                    <h6 class="pro" style="text-align: center; line-height: 0; color: lightseagreen;">Personalize Theme</h6>
+                    <div id="theme-opt-wrap">
+                        <div class="theme-dot" id="light-mode" onclick="addOg()"></div>
+                        <div class="theme-dot" id="blue-mode" onclick="addBlue()"></div>
+                        <div class="theme-dot" id="green-mode" onclick="addGreen()"></div>
+                        <div class="theme-dot" id="purple-mode" onclick="addPurple()"></div>
+                    </div>
+                </div>
+
+
+                <div class="right-column">
+                    <div id="preview-shadow">
+                        <div id="preview">
+                            <div class="corner" id="corner-tl"></div>
+                            <div class="corner" id="corner-tr"></div>
+                            <h6>Contact Us </h6>
+                            <p>For your landing pages and all sorts of frameworks</p>
+                            <div class="corner" id="corner-br"></div>
+                            <div class="corner" id="corner-bl"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="s2">
+        <div class="main-container">
+            <div class="about-con">
+                <div class="social-links">
+                    <h5 class="ti">Find me on Twitter & Instagram</h5>
+                    <div>
+                        <i class="fab fa-twitter-square fa-2x"></i> <span class="spa">@Sensei_plvto</span>
+                    </div>
+                    <div>
+                        <i class="fab fa-instagram-square fa-2x"></i> <span class="spa">@Sensei_plvto</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $('.slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            prevArrow: false,
+            nextArrow: false,
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
